@@ -1,0 +1,183 @@
+{
+	"env": {
+		"es6": true,
+		"node": true,
+		"amd": true,
+		"shared-node-browser": true,
+		"browser": true
+	},
+	"parser": "babel-eslint",
+	"extends": [
+		"eslint:recommended",
+		"plugin:react/recommended",
+		"react-native",
+		"plugin:flowtype/recommended"
+	],
+	"installedESLint": true,
+	"parserOptions": {
+		"ecmaVersion": 7,
+		"sourceType": "module",
+		"allowImportExportEverywhere": true,
+		"ecmaFeatures": {
+			"arrowFunctions": true,
+			"binaryLiterals": true,
+			"blockBindings": true,
+			"classes": true,
+			"defaultParams": true,
+			"destructuring": true,
+			"forOf": true,
+			"generators": true,
+			"modules": true,
+			"objectLiteralComputedProperties": true,
+			"objectLiteralDuplicateProperties": true,
+			"objectLiteralShorthandMethods": true,
+			"objectLiteralShorthandProperties": true,
+			"octalLiterals": true,
+			"regexUFlag": true,
+			"regexYFlag": true,
+			"spread": true,
+			"superInFunctions": true,
+			"templateStrings": true,
+			"unicodeCodePointEscapes": true,
+			"globalReturn": true,
+			"jsx": true,
+			"experimentalObjectRestSpread": true
+		}
+	},
+	"plugins": [
+		"react",
+		"react-native",
+		"import",
+		"flowtype"
+	],
+	"rules": {
+		"react/jsx-no-undef": 1,
+		"react/jsx-quotes": 1,
+		"react/jsx-sort-prop-types": 1,
+		"react/jsx-sort-props": 0,
+		"react/no-did-mount-set-state": 1,
+		"react/no-did-update-set-state": 1,
+		"react/no-multi-comp": 1,
+		"react/no-unknown-property": 1,
+		"react/prop-types": 1,
+		"react/react-in-jsx-scope": 1,
+		"react/self-closing-comp": 1,
+		"react/sort-comp": 0,
+		"react/wrap-multilines": 1,
+		"react/jsx-uses-react": "error",
+		"react/jsx-uses-vars": "error",
+		"react/jsx-handler-names": 0,
+		"react/jsx-boolean-value": 1,
+		"react/jsx-no-bind": 0,
+		"react/display-name": 1,
+		"react/no-string-refs": 1,
+		"react/no-unused-prop-types": 1,
+		"react/prefer-stateless-function": 1,
+		"react-native/no-unused-styles": 1,
+		"react-native/split-platform-components": 2,
+		"react-native/no-inline-styles": 1,
+		"react-native/no-color-literals": 0,
+		"prefer-stateless-function": [
+			1,
+			{
+				"ignorePureComponents": true
+			}
+		],
+		"strict": 0,
+		"no-use-before-define": 0,
+		"no-var": 0,
+		"no-alert": 1,
+		"no-unused-vars": 1,
+		"no-else-return": 0,
+		"no-console": 0,
+		"no-unneeded-ternary": 1,
+		"no-empty": 1,
+		"no-empty-function": 1,
+		"no-duplicate-imports": 1,
+		"operator-assignment": 1,
+		"class-methods-use-this": 1,
+		"prefer-const": 1,
+		"object-shorthand": 1,
+		"import/no-commonjs": 1,
+		"import/default": 1,
+		"import/prefer-default-export": 0,
+		"flowtype/boolean-style": [
+			2,
+			"boolean"
+		],
+		"flowtype/define-flow-type": 1,
+		"flowtype/delimiter-dangle": [
+			1,
+			"never"
+		],
+		"flowtype/generic-spacing": [
+			2,
+			"never"
+		],
+		"flowtype/no-weak-types": 1,
+		"flowtype/require-parameter-type": 1,
+		"flowtype/require-return-type": [
+			0,
+			"always",
+			{
+				"annotateUndefined": "never"
+			}
+		],
+		"flowtype/require-valid-file-annotation": 2,
+		"flowtype/semi": [
+			2,
+			"always"
+		],
+		"flowtype/space-after-type-colon": [
+			1,
+			"always"
+		],
+		"flowtype/space-before-generic-bracket": [
+			1,
+			"never"
+		],
+		"flowtype/space-before-type-colon": [
+			1,
+			"never"
+		],
+		"flowtype/type-id-match": [
+			0,
+			"^([A-Z][a-z0-9]+)+Type$"
+		],
+		"flowtype/union-intersection-spacing": [
+			2,
+			"always"
+		],
+		"flowtype/use-flow-type": 1,
+		"flowtype/valid-syntax": 1,
+		"indent": [
+			"off",
+			"tab"
+		],
+		"linebreak-style": [
+			"off",
+			"unix"
+		],
+		"quotes": [
+			"off",
+			"double"
+		],
+		"semi": [
+			"off",
+			"always"
+		]
+	},
+	"settings": {
+		"react": {
+			"createClass": "createClass",
+			// Regex for Component Factory to use, default to "createClass"
+			"pragma": "React",
+			// Pragma to use, default to "React"
+			"version": "15.3.2"
+			// React version, default to the latest React stable release
+		},
+		"flowtype": {
+			"onlyFilesWithFlowAnnotation": false
+		}
+	}
+}
